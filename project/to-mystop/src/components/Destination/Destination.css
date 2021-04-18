@@ -1,0 +1,53 @@
+.confirm-location{
+    background-color: #e1e3e5;
+    padding: 20px;
+    margin-right: 40px;
+    border-radius: 10px;
+}
+.confirm-location form input{
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    height:30px;
+
+}
+.submit-button{
+    margin-top: 15px;
+    background-color: coral;
+}
+.locations{
+    width: 100%;
+    background-color: coral;
+    border-radius: 10px;
+    padding: 10px;
+}
+.locations h5{
+    margin: 0px;
+    color:white;
+}
+.locations h5 img{
+    height:30px;
+    width:30px;
+}
+.ride-expense{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    margin: 10px 0px;
+}
+.ride-expense img{
+    height:50px;
+    width: 50px;
+}
+.ride-expense p{
+    margin-top:12px;
+}
+.map{
+    height: 80vh;
+    background-color:rgb(243, 236, 236);
+    padding: 10px;
+}

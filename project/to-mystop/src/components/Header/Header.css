@@ -1,0 +1,19 @@
+.nav{
+    margin-left:auto !important;
+}
+a{
+    color: black !important;
+    margin-right: 30px;
+    padding: 7px;
+}
+a:hover{
+    color: coral !important;
+    text-decoration:none !important;
+}
+.button{
+    background-color: salmon !important;
+    border: none !important;
+}
+.header{
+    font-weight: 700;
+}
