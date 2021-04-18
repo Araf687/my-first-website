@@ -39,14 +39,15 @@ const Destination = () => {
     
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data =>{
-        const {pickUpLocation,Destination}=data;
+        const {pickUpLocation,Destination,date}=data;
         const details={
             pickUpLocation:pickUpLocation,
             destination: Destination,
+            date:date,
             locationConfirmation:true,
         }
         setRideDetails(details);
-        console.log(details,data);
+        
 
     }
     return (
@@ -60,6 +61,7 @@ const Destination = () => {
                             <div>
                                 <div className='locations'>
                                     <div>
+                                        <p style={{textAlign:'center',color:'white'}}> <strong>{rideDetails.date}</strong></p>
                                         <h5><img src={pickUPLocationImg} alt=""/>{rideDetails.pickUpLocation}</h5> <br/>
                                         <h5><img src={destinationImg} alt=""/>{rideDetails.destination}</h5>
                                     </div>
@@ -88,6 +90,9 @@ const Destination = () => {
                                 <h6>Destination</h6>
                                 <input {...register("Destination", { required: true })} />
                                 {errors.Destination && <span>This field is required</span>}
+                                <h6>Date</h6>
+                                <input type="date" {...register("date", { required: true })} />
+                                {errors.date && <span>This field is required</span>}
                                 <input className='submit-button' type="submit" value='search'/>
                             </form>}
                         </div>
