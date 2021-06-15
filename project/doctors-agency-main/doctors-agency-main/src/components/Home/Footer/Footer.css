@@ -1,0 +1,32 @@
+li,a{
+    text-decoration: none;
+    list-style: none;
+    color:rgb(173, 169, 169);
+    font-weight: 600;
+}
+h5{
+    padding-left: 30px;
+}
+ul{
+    margin: 20px 0px;
+
+}
+li{
+    margin:10px 0px;
+}
+.social-medias{
+    padding:10px 30px;
+}
+.social-medias span a{
+    font-size: 35px;
+    color: rgb(11 219 185);
+    margin-right: 12px;
+    transition: 0.3s;
+}
+.social-medias span a:hover{
+    color: #06bea0;
+    
+}
+.footer-row{
+    border-bottom: 1px solid rgb(231, 230, 230);
+}
